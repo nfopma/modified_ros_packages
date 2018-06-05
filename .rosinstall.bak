@@ -1,0 +1,3 @@
+- git:
+    local-name: extra_functions_turtlebot
+    uri: https://github.com/turtlebot/turtlebot_apps.git
