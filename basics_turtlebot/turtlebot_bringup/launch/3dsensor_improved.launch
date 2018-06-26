@@ -60,7 +60,7 @@
    -->
   <group if="$(arg scan_processing)">
     <node name="laserscan_kinect" pkg="laserscan_kinect" type="laserscan_kinect" >
-  	  	<remap from="$(arg_camera)/image" to="/camera/depth/image_raw"/>
+  	  	<remap from="image" to="/camera/depth/image_raw"/>
   	  	<remap from="camera_info" to="/camera/depth/camera_info"/>
         <rosparam command="load" file="$(find laserscan_kinect)/config/params.yaml" />
   	</node>
